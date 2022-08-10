@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layout_main"
+    tools:context=".ShowCaptureActivity">
+
+
+    <TextView
+        android:id="@+id/txtIdentifyResult"
+        android:layout_width="361dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="40dp"
+        android:text="Kết quả xác thực"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/colorTitle"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgCapture"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="324dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="4:3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/txtViewResult"
+        android:layout_width="345dp"
+        android:layout_height="41dp"
+        android:layout_marginBottom="192dp"
+        android:text="Xác thực thành công:"
+        android:textAllCaps="false"
+        android:textColor="@color/colorTitle"
+        android:textSize="@dimen/size_20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.456"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtViewComment"
+        android:layout_width="345dp"
+        android:layout_height="112dp"
+        android:layout_marginTop="12dp"
+        android:text="Khuôn mặt chụp rõ ràng, khớp với ảnh chụp trong căn cước công dân"
+        android:textAllCaps="false"
+        android:textColor="@color/colorTitle"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.431"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewResult" />
+</androidx.constraintlayout.widget.ConstraintLayout>
